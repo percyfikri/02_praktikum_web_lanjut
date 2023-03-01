@@ -13,6 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 Route::get('/', function () {
-    return view('welcome');
+    echo "Selamat Datang";
+    });
+
+Route::get('/about', function(){
+    echo "NIM   : 2141720190<br>";
+    echo "Nama  : Muhammad Alvi Fikri<br>";
+    echo "Kelas : 2H";
 });
+
+Route::get('/articles/{id}', function ($id) {
+    echo "Halaman Artikel dengan ID $id";
+    });
